@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alankrit Rastogi | Software Engineering Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dracula: {
+                            bg: '#282a36',
+                            current: '#44475a',
+                            fg: '#f8f8f2',
+                            comment: '#6272a4',
+                            cyan: '#8be9fd',
+                            green: '#50fa7b',
+                            orange: '#ffb86c',
+                            pink: '#ff79c6',
+                            purple: '#bd93f9',
+                            red: '#ff5555',
+                            yellow: '#f1fa8c'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #282a36; color: #f8f8f2; }
+        .glow-hover:hover { box-shadow: 0 0 20px currentColor; }
+        .img-glow:hover { box-shadow: 0 0 15px currentColor; }
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-dracula-pink selection:text-dracula-bg">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-dracula-bg/90 backdrop-blur-md border-b border-dracula-current">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-dracula-fg tracking-tight">Alankrit<span class="text-dracula-purple">.</span></a>
+            <div class="space-x-6 text-sm font-medium text-dracula-comment hidden md:block">
+                <a href="#impact" class="hover:text-dracula-cyan transition-colors">Impact</a>
+                <a href="#skills" class="hover:text-dracula-orange transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-dracula-pink transition-colors">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-20">
+        
+        <!-- Hero Section -->
+        <header class="mb-24">
+            <div class="inline-block px-3 py-1 mb-6 border border-dracula-current rounded-full text-xs font-mono text-dracula-cyan bg-dracula-current/30">
+                3rd-Sem CSE @ JIIT
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                I write high-performance C++ algorithms and build <span class="text-transparent bg-clip-text bg-gradient-to-r from-dracula-purple to-dracula-pink">offline AI tools.</span>
+            </h1>
+            <p class="text-xl text-dracula-comment max-w-2xl mb-10">
+                Ranked top 5.49% globally on LeetCode with a focus on advanced data structures.
+            </p>
+        </header>
+
+        <!-- Stats / Impact Section -->
+        <section id="impact" class="mb-24">
+            <h2 class="text-sm font-mono text-dracula-comment mb-6 uppercase tracking-widest">Competitive Programming Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- LeetCode Card (With Knight Badge Image Placeholder) -->
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 text-dracula-yellow transition-all duration-300 hover:bg-dracula-current/30 glow-hover cursor-default relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="text-3xl font-bold">1,876 Rating</div>
+                        <div class="w-12 h-12 rounded shadow-lg border border-dracula-yellow/30 bg-dracula-current flex items-center justify-center text-xs overflow-hidden">
+                            <img src="knight-badge.jpg" alt="LeetCode Knight" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="text-dracula-fg font-semibold mb-4">LeetCode Knight</div>
+                    <ul class="text-sm text-dracula-comment space-y-2">
+                        <li>• Top 5.49% Globally</li>
+                        <li>• 1,106 Problems Solved</li>
+                        <li>• 51-Day Max Streak</li>
+                    </ul>
+                </div>
+
+                <!-- Codeforces Card -->
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 text-dracula-cyan transition-all duration-300 hover:bg-dracula-current/30 glow-hover cursor-default">
+                    <div class="text-3xl font-bold mb-2">1,457 Rating</div>
+                    <div class="text-dracula-fg font-semibold mb-4">Codeforces Specialist</div>
+                    <ul class="text-sm text-dracula-comment space-y-2">
+                        <li>• Custom fast_io template user</li>
+                        <li>• 700+ submissions</li>
+                    </ul>
+                </div>
+
+                <!-- CodeChef Card -->
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 text-dracula-pink transition-all duration-300 hover:bg-dracula-current/30 glow-hover cursor-default">
+                    <div class="text-3xl font-bold mb-2">3★ Rank</div>
+                    <div class="text-dracula-fg font-semibold mb-4">CodeChef (Peak 1656)</div>
+                    <ul class="text-sm text-dracula-comment space-y-2">
+                        <li>• Division 2 Competitor</li>
+                        <li>• Global Rank: 10,883</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="mb-24">
+            <div class="p-8 border border-dracula-green/30 rounded-xl bg-dracula-green/5 flex flex-col md:flex-row items-center justify-between transition-all duration-300 hover:border-dracula-green glow-hover text-dracula-green gap-8">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2 text-dracula-fg">1st Place Overall — Encode 26.1</h3>
+                    <p class="text-dracula-comment mb-6">Secured the first position out of all participants in the Knuth Programming Hub algorithmic contest at JIIT.</p>
+                    <div class="flex items-center gap-3">
+                        <div class="text-3xl font-extrabold">🥇</div>
+                        <div class="text-sm font-mono uppercase tracking-widest text-dracula-green font-bold border border-dracula-green px-3 py-1 rounded">Champion</div>
+                    </div>
+                </div>
+                <!-- Certificate Image Placeholder -->
+                <div class="md:w-1/3 flex justify-center md:justify-end">
+                    <div class="w-full max-w-[220px] rounded-lg border-2 border-dracula-green/30 shadow-lg bg-dracula-current flex items-center justify-center text-dracula-comment transition-transform duration-300 hover:scale-105 hover:border-dracula-green img-glow overflow-hidden">
+                        <img src="certificate.jpg" alt="Encode 26.1 Certificate" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-24">
+            <h2 class="text-sm font-mono text-dracula-comment mb-6 uppercase tracking-widest">Technical Arsenal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 transition-all duration-300 hover:bg-dracula-current/30 glow-hover text-dracula-orange">
+                    <h3 class="text-dracula-orange font-bold mb-4 flex items-center"><span class="mr-2">/></span> Languages</h3>
+                    <ul class="space-y-3 text-dracula-fg">
+                        <li class="flex justify-between border-b border-dracula-current pb-2"><span>Python 3</span> <span class="text-dracula-comment font-mono text-sm">965+ solved</span></li>
+                        <li class="flex justify-between border-b border-dracula-current pb-2"><span>C++</span> <span class="text-dracula-comment font-mono text-sm">170+ solved</span></li>
+                        <li class="flex justify-between border-b border-dracula-current pb-2"><span>JavaScript / HTML / CSS</span> <span class="text-dracula-comment font-mono text-sm">Web</span></li>
+                        <li class="flex justify-between border-b border-dracula-current pb-2"><span>PL/SQL</span> <span class="text-dracula-comment font-mono text-sm">Database</span></li>
+                    </ul>
+                </div>
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 transition-all duration-300 hover:bg-dracula-current/30 glow-hover text-dracula-orange">
+                    <h3 class="text-dracula-orange font-bold mb-4 flex items-center"><span class="mr-2">/></span> Core Algorithms</h3>
+                    <ul class="space-y-3 text-dracula-fg flex flex-wrap gap-2">
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Dynamic Programming</li>
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Hash Tables</li>
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Sorting & Arrays</li>
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Union-Find</li>
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Backtracking</li>
+                        <li class="bg-dracula-current/30 px-3 py-1 rounded text-sm border border-dracula-current/50">Greedy Math</li>
+                    </ul>
+                </div>
+                <div class="p-6 border border-dracula-current rounded-xl bg-dracula-current/10 transition-all duration-300 hover:bg-dracula-current/30 glow-hover text-dracula-orange">
+                    <h3 class="text-dracula-orange font-bold mb-4 flex items-center"><span class="mr-2">/></span> Tools & Environments</h3>
+                    <ul class="space-y-3 text-dracula-fg">
+                        <li class="flex items-center"><span class="text-dracula-green mr-2">✔</span> Linux / Custom Key Maps</li>
+                        <li class="flex items-center"><span class="text-dracula-green mr-2">✔</span> Git & GitHub Actions</li>
+                        <li class="flex items-center"><span class="text-dracula-green mr-2">✔</span> VS Code / Jupyter</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="text-sm font-mono text-dracula-comment mb-6 uppercase tracking-widest">Projects</h2>
+            
+            <div class="border border-dracula-current rounded-xl bg-dracula-bg overflow-hidden transition-all duration-300 hover:border-dracula-purple text-dracula-purple glow-hover">
+                <div class="p-8 md:p-12">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-3xl font-bold text-dracula-fg mb-2">I-AI-code</h3>
+                            <p class="text-dracula-purple font-mono text-sm">Top Project • Beta Testing on Product Hunt</p>
+                        </div>
+                        <span class="px-3 py-1 bg-dracula-current rounded-full text-xs font-bold text-dracula-fg border border-dracula-current/50">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-dracula-fg leading-relaxed mb-6">
+                        An offline, AI-driven coding interview coach designed to simulate real-world DSA and LLD interview environments. Built to operate without API keys, cloud dependencies, or subscriptions, leveraging local models (llama.cpp + Qwen) to provide immediate, private feedback on algorithm efficiency and design patterns.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="bg-dracula-current/20 p-3 rounded border border-dracula-current/50">
+                            <span class="block text-dracula-comment mb-1">Focus</span>
+                            <span class="text-dracula-fg font-semibold">DSA & LLD</span>
+                        </div>
+                        <div class="bg-dracula-current/20 p-3 rounded border border-dracula-current/50">
+                            <span class="block text-dracula-comment mb-1">Core Tech</span>
+                            <span class="text-dracula-fg font-semibold">llama.cpp</span>
+                        </div>
+                        <div class="bg-dracula-current/20 p-3 rounded border border-dracula-current/50">
+                            <span class="block text-dracula-comment mb-1">Model</span>
+                            <span class="text-dracula-fg font-semibold">Qwen</span>
+                        </div>
+                        <div class="bg-dracula-current/20 p-3 rounded border border-dracula-current/50">
+                            <span class="block text-dracula-comment mb-1">Status</span>
+                            <span class="text-dracula-fg font-semibold">Live Beta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
